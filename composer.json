@@ -1,0 +1,41 @@
+{
+    "name": "tiagoandrepro/driver-whatsapp-api",
+    "description": "BotMan Baileys WhatsApp Driver",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Tiago André",
+            "email": "thiago_andre@live.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "WhatsAppDriver\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ],
+            "providers": [
+                "WhatsAppDriver\\Providers\\WhatsAppDriverServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
